@@ -4,10 +4,53 @@ import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { getBlogPostBySlug } from "@/lib/blog";
 import { marked } from "marked";
+import { Metadata } from "next";
 
 interface BlogPostParams {
     params: {
         slug: string;
+    };
+}
+
+// Generate dynamic metadata for each blog post
+export async function generateMetadata({ params }: BlogPostParams): Promise<Metadata> {
+    const { slug } = params;
+    const post = getBlogPostBySlug(slug);
+    
+    if (!post) {
+        return {
+            title: 'Blog Post Not Found',
+        };
+    }
+    
+    // Extract a short excerpt from content for description
+    const excerpt = post.description || (post.content ? post.content.substring(0, 155) + '...' : '');
+    
+    return {
+        title: `${post.title} - Chanakorn Aramsak's Blog`,
+        description: excerpt,
+        openGraph: {
+            title: post.title,
+            description: excerpt,
+            type: 'article',
+            publishedTime: post.date,
+            authors: ['Chanakorn Aramsak'],
+            images: [
+                {
+                    url: post.image || '/profile.jpg',
+                    width: 1200,
+                    height: 630,
+                    alt: post.title,
+                }
+            ],
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title: post.title,
+            description: excerpt,
+            images: [post.image || '/profile.jpg'],
+            creator: '@chanakorn',
+        }
     };
 }
 

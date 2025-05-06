@@ -8,6 +8,32 @@ import {
 } from "@/components/ui/card";
 import { getAllBlogPosts } from "@/lib/blog";
 
+// Add metadata for the blog page
+export const metadata = {
+    title: "Blog - Chanakorn Aramsak",
+    description: "Articles and tutorials on web development, React, Next.js and other technologies I work with.",
+    openGraph: {
+        title: "Blog - Chanakorn Aramsak",
+        description: "Articles and tutorials on web development, React, Next.js and other technologies I work with.",
+        images: [
+            {
+                url: "/profile.jpg",
+                width: 1200,
+                height: 630,
+                alt: "Chanakorn Aramsak's Blog",
+            },
+        ],
+        type: "website",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Blog - Chanakorn Aramsak",
+        description: "Articles and tutorials on web development, React, Next.js and other technologies I work with.",
+        images: ["/profile.jpg"],
+        creator: "@chanakorn",
+    },
+};
+
 export default function BlogPage() {
     // Get blog posts from the file system
     const posts = getAllBlogPosts();

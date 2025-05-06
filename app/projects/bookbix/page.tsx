@@ -1,8 +1,35 @@
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Metadata } from "next";
+
+// Generate metadata for the BookBix project page
+export const metadata: Metadata = {
+    title: "BookBix Project - Chanakorn Aramsak",
+    description: "A secure book marketplace platform with integrated payment processing system using Stripe and JWT authentication.",
+    openGraph: {
+        title: "BookBix Project - Chanakorn Aramsak",
+        description: "A secure book marketplace platform with integrated payment processing system using Stripe and JWT authentication.",
+        images: [
+            {
+                url: "/bookbix-architecture.png",
+                width: 1200,
+                height: 630,
+                alt: "BookBix Architecture",
+            },
+        ],
+        type: "article",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "BookBix Project - Chanakorn Aramsak",
+        description: "A secure book marketplace platform with integrated payment processing system using Stripe and JWT authentication.",
+        images: ["/bookbix-architecture.png"],
+        creator: "@chanakorn",
+    },
+};
 
 export default function BookBixProject() {
     // Project tech stack

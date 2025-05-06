@@ -6,6 +6,32 @@ import { ProjectCard } from "@/components/project-card";
 import { BlogPreview } from "@/components/blog-preview";
 import { getRecentPosts } from "@/lib/blog"; // Updated import path
 
+// Add metadata for the home page
+export const metadata = {
+    title: "Chanakorn Aramsak - Full Stack Developer",
+    description: "Full-stack developer specializing in building exceptional digital experiences with modern technologies like Next.js, React, and Node.js.",
+    openGraph: {
+        title: "Chanakorn Aramsak - Full Stack Developer",
+        description: "Full-stack developer specializing in building exceptional digital experiences with modern technologies like Next.js, React, and Node.js.",
+        images: [
+            {
+                url: "/profile.jpg",
+                width: 1200,
+                height: 630,
+                alt: "Chanakorn Aramsak",
+            },
+        ],
+        type: "website",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Chanakorn Aramsak - Full Stack Developer",
+        description: "Full-stack developer specializing in building exceptional digital experiences with modern technologies like Next.js, React, and Node.js.",
+        images: ["/profile.jpg"],
+        creator: "@chanakorn",
+    },
+};
+
 export default function Home() {
     // Featured projects
     const featuredProjects = [

@@ -1,5 +1,31 @@
 import { ProjectCard } from "@/components/project-card";
 
+// Add metadata for the projects page
+export const metadata = {
+    title: "Projects - Chanakorn Aramsak",
+    description: "Explore my portfolio of web development projects showcasing skills in Next.js, React, and full-stack development.",
+    openGraph: {
+        title: "Projects - Chanakorn Aramsak",
+        description: "Explore my portfolio of web development projects showcasing skills in Next.js, React, and full-stack development.",
+        images: [
+            {
+                url: "/bookbix-architecture.png",
+                width: 1200,
+                height: 630,
+                alt: "Chanakorn Aramsak Projects",
+            },
+        ],
+        type: "website",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Projects - Chanakorn Aramsak",
+        description: "Explore my portfolio of web development projects showcasing skills in Next.js, React, and full-stack development.",
+        images: ["/bookbix-architecture.png"],
+        creator: "@chanakorn",
+    },
+};
+
 export default function ProjectsPage() {
     // Projects data (in a real app, this would come from a database or CMS)
     const projects = [

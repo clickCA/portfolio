@@ -1,8 +1,35 @@
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Metadata } from "next";
+
+// Generate metadata for the Khunlook Nursery project page
+export const metadata: Metadata = {
+    title: "Khunlook Nursery Project - Chanakorn Aramsak",
+    description: "A classroom management dashboard with responsive design and comprehensive testing for Khunlook Nursery.",
+    openGraph: {
+        title: "Khunlook Nursery Project - Chanakorn Aramsak",
+        description: "A classroom management dashboard with responsive design and comprehensive testing for Khunlook Nursery.",
+        images: [
+            {
+                url: "/khunlook-asset.png",
+                width: 1200,
+                height: 630,
+                alt: "Khunlook Nursery Project",
+            },
+        ],
+        type: "article",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Khunlook Nursery Project - Chanakorn Aramsak",
+        description: "A classroom management dashboard with responsive design and comprehensive testing for Khunlook Nursery.",
+        images: ["/khunlook-asset.png"],
+        creator: "@chanakorn",
+    },
+};
 
 export default function KhunlookNurseryProject() {
     // Project tech stack
