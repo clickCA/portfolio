@@ -8,9 +8,34 @@ import Footer from "@/components/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Developer Portfolio",
-  description: "A clean, minimalist developer portfolio and blog",
-    generator: 'v0.dev'
+  title: "Chanakorn Aramsak - Portfolio",
+  description: "Full-stack developer specializing in building exceptional digital experiences with modern technologies like Next.js, React, and Node.js.",
+  generator: 'v0.dev',
+  metadataBase: new URL('https://chanakorn-portfolio.vercel.app'),
+  openGraph: {
+    title: "Chanakorn Aramsak - Full Stack Developer",
+    description: "Full-stack developer specializing in building exceptional digital experiences with modern technologies like Next.js, React, and Node.js.",
+    images: [
+      {
+        url: "/profile.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Chanakorn Aramsak"
+      }
+    ],
+    locale: "en_US",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Chanakorn Aramsak - Full Stack Developer",
+    description: "Full-stack developer specializing in building exceptional digital experiences with modern technologies like Next.js, React, and Node.js.",
+    images: ["/profile.jpg"],
+    creator: "@chanakorn"
+  },
+  icons: {
+    icon: "/favicon.ico"
+  }
 }
 
 export default function RootLayout({
@@ -30,7 +55,3 @@ export default function RootLayout({
     </html>
   )
 }
-
-
-
-import './globals.css'
