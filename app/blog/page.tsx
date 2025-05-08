@@ -17,7 +17,7 @@ export const metadata = {
         description: "Articles and tutorials on web development, React, Next.js and other technologies I work with.",
         images: [
             {
-                url: "/profile.jpg",
+                url: "/preview-light.png",
                 width: 1200,
                 height: 630,
                 alt: "Chanakorn Aramsak's Blog",
@@ -29,7 +29,7 @@ export const metadata = {
         card: "summary_large_image",
         title: "Blog - Chanakorn Aramsak",
         description: "Articles and tutorials on web development, React, Next.js and other technologies I work with.",
-        images: ["/profile.jpg"],
+        images: ["/preview-light.png"],
         creator: "@chanakorn",
     },
 };

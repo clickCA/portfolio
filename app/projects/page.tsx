@@ -3,16 +3,16 @@ import { ProjectCard } from "@/components/project-card";
 // Add metadata for the projects page
 export const metadata = {
     title: "Projects - Chanakorn Aramsak",
-    description: "Explore my portfolio of web development projects showcasing skills in Next.js, React, and full-stack development.",
+    description: "Explore my recent web development projects built with React, Next.js, and other modern technologies.",
     openGraph: {
         title: "Projects - Chanakorn Aramsak",
-        description: "Explore my portfolio of web development projects showcasing skills in Next.js, React, and full-stack development.",
+        description: "Explore my recent web development projects built with React, Next.js, and other modern technologies.",
         images: [
             {
-                url: "/bookbix-architecture.png",
+                url: "/preview-light.png",
                 width: 1200,
                 height: 630,
-                alt: "Chanakorn Aramsak Projects",
+                alt: "Chanakorn Aramsak's Projects",
             },
         ],
         type: "website",
@@ -20,8 +20,8 @@ export const metadata = {
     twitter: {
         card: "summary_large_image",
         title: "Projects - Chanakorn Aramsak",
-        description: "Explore my portfolio of web development projects showcasing skills in Next.js, React, and full-stack development.",
-        images: ["/bookbix-architecture.png"],
+        description: "Explore my recent web development projects built with React, Next.js, and other modern technologies.",
+        images: ["/preview-light.png"],
         creator: "@chanakorn",
     },
 };

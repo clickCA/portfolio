@@ -15,7 +15,7 @@ export const metadata = {
         description: "Full-stack developer specializing in building exceptional digital experiences with modern technologies like Next.js, React, and Node.js.",
         images: [
             {
-                url: "/profile.jpg",
+                url: "/preview-light.png",
                 width: 1200,
                 height: 630,
                 alt: "Chanakorn Aramsak",
@@ -27,7 +27,7 @@ export const metadata = {
         card: "summary_large_image",
         title: "Chanakorn Aramsak - Full Stack Developer",
         description: "Full-stack developer specializing in building exceptional digital experiences with modern technologies like Next.js, React, and Node.js.",
-        images: ["/profile.jpg"],
+        images: ["/preview-light.png"],
         creator: "@chanakorn",
     },
 };

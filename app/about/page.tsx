@@ -23,7 +23,7 @@ export const metadata = {
         description: "Learn more about my background, skills, and experience as a full-stack developer.",
         images: [
             {
-                url: "/profile.jpg",
+                url: "/preview-light.png",
                 width: 1200,
                 height: 630,
                 alt: "Chanakorn Aramsak",
@@ -35,7 +35,7 @@ export const metadata = {
         card: "summary_large_image",
         title: "About Me - Chanakorn Aramsak",
         description: "Learn more about my background, skills, and experience as a full-stack developer.",
-        images: ["/profile.jpg"],
+        images: ["/preview-light.png"],
         creator: "@chanakorn",
     },
 };
