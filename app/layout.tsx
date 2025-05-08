@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Chanakorn Aramsak - Portfolio",
   description: "Full-stack developer specializing in building exceptional digital experiences with modern technologies like Next.js, React, and Node.js.",
   generator: 'v0.dev',
-  metadataBase: new URL('https://chanakorn-portfolio.vercel.app'),
+  metadataBase: new URL('https://portfolio-chanakorn-aramsaks-projects.vercel.app/'),
   openGraph: {
     title: "Chanakorn Aramsak - Full Stack Developer",
     description: "Full-stack developer specializing in building exceptional digital experiences with modern technologies like Next.js, React, and Node.js.",
