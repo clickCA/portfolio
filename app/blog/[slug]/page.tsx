@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: BlogPostParams): Promise<Meta
             authors: ['Chanakorn Aramsak'],
             images: [
                 {
-                    url: post.image || '/profile.jpg',
+                    url: '/profile.jpg',
                     width: 1200,
                     height: 630,
                     alt: post.title,
@@ -48,7 +48,7 @@ export async function generateMetadata({ params }: BlogPostParams): Promise<Meta
             card: 'summary_large_image',
             title: post.title,
             description: excerpt,
-            images: [post.image || '/profile.jpg'],
+            images: '/profile.jpg',
             creator: '@chanakorn',
         }
     };
